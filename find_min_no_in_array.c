@@ -3,9 +3,9 @@
 int main(int argc,const char* argv[])
 {
     int n = 0;
-    int max;
+    int max;//可出现的最大正整数，用于遍历
     int min;//数组中未出现最小正整数
-    int temp;
+    int temp;//临时变量
     int flag = 0;//全为负数
     printf("请输入数组个数：");
     scanf("%d",&n);                                                             
