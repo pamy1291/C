@@ -1,0 +1,19 @@
+#include <stdio.h>    
+
+union Data{
+    int num;
+    char ch;//默认存在低地址
+};
+
+int main(int argc,const char* argv[])
+{
+    union Data d;
+    d.num = 0x01020304;
+    if(d.ch == 0x04) {
+        printf("小端");
+    }   
+    else {
+        printf("大端");
+    }   
+    return 0;
+}
